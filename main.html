@@ -36,6 +36,7 @@
           <div class="cards grid grid-cols-3 mt-14 gap-2 p-2">
             <!-- Box-1 -->
             <div
+              id="add-money-box"
               class="box border border-[#0808081A] py-5 px-2 text-center rounded-xl cursor-pointer"
             >
               <img src="assets/purse1.png" alt="" class="w-8 mx-auto" />
@@ -44,6 +45,7 @@
 
             <!-- Box-2 -->
             <div
+              id="cash-out-box"
               class="box border border-[#0808081A] py-5 px-2 text-center rounded-xl cursor-pointer"
             >
               <img src="assets/send1.png" alt="" class="w-8 mx-auto" />
@@ -84,7 +86,7 @@
           </div>
 
           <!-- Add Money Section -->
-          <section>
+          <section id="add-money">
             <h2>Add Money</h2>
 
             <!-- Login Form -->
@@ -140,9 +142,50 @@
               </div>
             </div>
           </section>
+
+          <!-- Cash Out Section -->
+          <section id="cash-out">
+            <h2>Cash Out</h2>
+            <fieldset class="fieldset">
+              <label class="fieldset-label">Account Number</label>
+              <input
+                id="account-number"
+                type="number"
+                class="input"
+                placeholder="Type Your Number"
+                value="12312312312"
+                required
+              />
+              <label class="fieldset-label">Amount</label>
+              <input
+                id="amount"
+                type="number"
+                class="input"
+                placeholder="Type Your Amount"
+                required
+              />
+              <label class="fieldset-label">PIN</label>
+              <input
+                id="pin"
+                type="text"
+                class="input"
+                placeholder="Type Your PIN"
+                value="1234"
+                required
+              />
+              <div><a class="link link-hover">Forgot password?</a></div>
+              <button
+                id="add-money-btn"
+                class="btn btn-neutral mt-4 rounded-3xl bg-[#0874F2] border-none"
+              >
+                Cash Out
+              </button>
+            </fieldset>
+          </section>
         </section>
       </header>
     </section>
     <script src="script/addMoney.js"></script>
+    <script src="script/toggle.js"></script>
   </body>
 </html>
