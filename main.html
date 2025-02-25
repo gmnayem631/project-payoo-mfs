@@ -4,8 +4,134 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.8/daisyui.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body>
-    <h1>Hello World</h1>
+  <body class="bg-slate-800">
+    <section class="max-w-md min-h-screen mx-auto py-6 bg-gray-200">
+      <header>
+        <nav class="flex items-center justify-around">
+          <img src="assets/group.png" alt="" class="w-16" />
+          <div>
+            <h1 class="text-3xl font-bold">$4500</h1>
+            <p class="border rounded">Available Balance</p>
+          </div>
+          <button class="btn">Logout</button>
+        </nav>
+
+        <section class="mt-10">
+          <h1 class="text-2xl font-bold mb-2">Welcome to Payoo!</h1>
+          <p>
+            Enjoy easy and convenient financial services with us. Cash out
+            charge is low and
+          </p>
+
+          <!-- Card Container -->
+          <div class="cards grid grid-cols-3 mt-14 gap-2 p-2">
+            <!-- Box-1 -->
+            <div
+              class="box border border-[#0808081A] py-5 px-2 text-center rounded-xl cursor-pointer"
+            >
+              <img src="assets/purse1.png" alt="" class="w-8 mx-auto" />
+              <h3>Add Money</h3>
+            </div>
+
+            <!-- Box-2 -->
+            <div
+              class="box border border-[#0808081A] py-5 px-2 text-center rounded-xl cursor-pointer"
+            >
+              <img src="assets/send1.png" alt="" class="w-8 mx-auto" />
+              <h3>Cash Out</h3>
+            </div>
+
+            <!-- Box-3 -->
+            <div
+              class="box border border-[#0808081A] py-5 px-2 text-center rounded-xl cursor-pointer"
+            >
+              <img src="assets/money.png" alt="" class="w-8 mx-auto" />
+              <h3>Transfer Money</h3>
+            </div>
+
+            <!-- Box-4 -->
+            <div
+              class="box border border-[#0808081A] py-5 px-2 text-center rounded-xl cursor-pointer"
+            >
+              <img src="assets/bonus.png" alt="" class="w-8 mx-auto" />
+              <h3>Get Bonus</h3>
+            </div>
+
+            <!-- Box-5 -->
+            <div
+              class="box border border-[#0808081A] py-5 px-2 text-center rounded-xl cursor-pointer"
+            >
+              <img src="assets/wallet.png" alt="" class="w-8 mx-auto" />
+              <h3>Pay Bill</h3>
+            </div>
+
+            <!-- Box-6 -->
+            <div
+              class="box border border-[#0808081A] py-5 px-2 text-center rounded-xl cursor-pointer"
+            >
+              <img src="assets/transaction.png" alt="" class="w-8 mx-auto" />
+              <h3>Transactions</h3>
+            </div>
+          </div>
+
+          <!-- Add Money Section -->
+          <section>
+            <h2>Add Money</h2>
+
+            <!-- Login Form -->
+            <div class="">
+              <div class="hero-content flex-col lg:flex-row-reverse">
+                <div class="card w-full max-w-sm shrink-0 shadow-2xl">
+                  <div class="card-body">
+                    <!-- Select Options -->
+                    <legend>Select Bank</legend>
+                    <select class="select">
+                      <option disabled selected>Select a Bank</option>
+                      <option value="Bkash">Bkash</option>
+                      <option value="Nagad">Nagad</option>
+                      <option value="DbbL">DBBL</option>
+                    </select>
+                    <fieldset class="fieldset">
+                      <label class="fieldset-label">Account Number</label>
+                      <input
+                        id="account-number"
+                        type="number"
+                        class="input"
+                        placeholder="Type Your Number"
+                        value="12312312312"
+                        required
+                      />
+                      <label class="fieldset-label">PIN</label>
+                      <input
+                        id="pin"
+                        type="text"
+                        class="input"
+                        placeholder="Type Your PIN"
+                        value="1234"
+                        required
+                      />
+                      <div><a class="link link-hover">Forgot password?</a></div>
+                      <button
+                        id="login-btn"
+                        class="btn btn-neutral mt-4 rounded-3xl bg-[#0874F2] border-none"
+                      >
+                        Add Money
+                      </button>
+                    </fieldset>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+      </header>
+    </section>
   </body>
 </html>
