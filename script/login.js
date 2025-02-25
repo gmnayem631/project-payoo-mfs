@@ -10,7 +10,7 @@ document
       if (convertedPin === 1234) {
         window.location.href = "../main.html";
       } else {
-        console.log("incorrect pin");
+        alert("Incorrect PIN");
       }
     } else {
       console.log("Invalid Account Number");
