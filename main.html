@@ -78,6 +78,7 @@
 
             <!-- Transaction Box -->
             <div
+              id="transaction-box"
               class="box border border-[#0808081A] py-5 px-2 text-center rounded-xl cursor-pointer"
             >
               <img src="assets/transaction.png" alt="" class="w-8 mx-auto" />
@@ -184,6 +185,14 @@
               </button>
             </fieldset>
           </section>
+
+          <!-- Transaction History Section -->
+          <section id="transaction">
+            <h1 class="text-3xl font-bold text-red-400 text-center p-3">
+              Transaction History
+            </h1>
+            <div id="transaction-container"></div>
+          </section>
         </section>
       </header>
     </section>
@@ -194,5 +203,6 @@
     <script src="utilities/toggleUtility.js"></script>
     <script src="script/cashout.js"></script>
     <!-- <script src="utilities/cashoutUtility.js"></script> -->
+    <script src="script/transactionHistory.js"></script>
   </body>
 </html>

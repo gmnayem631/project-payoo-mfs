@@ -9,6 +9,10 @@ document
     // accessing main balance
     const mainBalance = getInnerTextById("main-balance");
 
+    if (cashoutAmount > mainBalance) {
+      alert("invalid amount");
+      return;
+    }
     // pin checking
     if (accountCashOut.length === 11 && cashoutPin === 1234) {
       const sum = mainBalance - cashoutAmount;
