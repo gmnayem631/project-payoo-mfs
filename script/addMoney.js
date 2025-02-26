@@ -11,7 +11,6 @@ document
     // Selecting main balance
     const mainBalance = document.getElementById("main-balance").innerText;
     const convertMainBalance = parseFloat(mainBalance);
-    console.log(typeof convertMainBalance);
 
     if (convertedPin === 1234) {
       const newBalance = convertMainBalance + convertedAmount;
